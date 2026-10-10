@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panorama de vendas | Yasmin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+  <script defer src="dados-hamburgueria.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Ícones locais reutilizáveis: ilustrações decorativas, sem dependência de rede. -->
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icone-hamburguer" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 17C6 8 12 5 20 5s14 3 15 12H5Z"/>
+        <path class="icon-white" d="m5 22 5-2 5 3 5-3 5 3 5-3 5 2M6 27h28"/>
+        <path d="M5 31h30c0 4-3 5-6 5H11c-3 0-6-1-6-5Z"/>
+        <path class="icon-white" d="m14 11 1 1m5-3 1 1m5 1 1 1"/>
+      </g>
+    </symbol>
+    <symbol id="icone-batatas" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path class="icon-white" d="m10 20-2-13 5-1 2 14m1 0V3h5v17m2 0 2-15 5 1-2 14m1 0 4-10 4 2-3 8"/>
+        <path d="M6 19c9 5 19 5 28 0l-4 17H10L6 19Z"/>
+        <path class="icon-white" d="M17 28h6m-3-3v6"/>
+      </g>
+    </symbol>
+    <symbol id="icone-refrigerante" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path class="icon-white" d="m22 12 3-9h8M8 12h24v5H8v-5Z"/>
+        <path d="m10 17 3 19h14l3-19M14 25h12"/>
+        <path class="icon-white" d="m16 21 1 10"/>
+      </g>
+    </symbol>
+  </svg>
+  <main>
+    <header class="header">
+      <div class="header-intro">
+        <p class="eyebrow">FUNDAMENTOS DE IA E ANÁLISE DE DADOS</p>
+        <div class="header-identity">
+          <h1>Panorama de vendas<span>.</span><span class="nome-proprietaria" id="nome-proprietaria">Yasmin</span></h1>
+          <nav class="professional-links" aria-label="Perfis profissionais de Yasmin">
+            <a class="professional-pill" href="https://github.com/pontelyasmin-crypto" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Yasmin (abre em nova aba)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.63 0c2.15-1.46 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.21.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg><span>GitHub</span>
+            </a>
+            <a class="professional-pill" href="https://www.linkedin.com/in/yasmin-pontel-318626198" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Yasmin (abre em nova aba)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.57 1.98 3.57 4.56v5.25Z"/></svg><span>LinkedIn</span>
+            </a>
+            <a class="professional-pill" href="https://instagram.com/yasmin__pontel" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Yasmin (abre em nova aba)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span>
+            </a>
+          </nav>
+        </div>
+        <p class="subtitle">Explore os números. Compare resultados. Descubra padrões.</p>
+      </div>
+      <div class="actions"><label class="button primary" for="arquivo"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5h16v-5"/></svg>Importar CSV</label><input id="arquivo" type="file" accept=".csv,text/csv"><button id="demonstracao">Usar demonstração</button></div>
+    </header>
+    <section class="product-showcase" aria-label="Ilustrações holográficas decorativas dos produtos">
+      <article class="hologram-card">
+        <div class="hologram-scene" aria-hidden="true"><div class="hologram-orbit"></div><svg class="hologram-image" viewBox="0 0 40 40"><use href="#icone-hamburguer"/></svg><div class="hologram-platform"></div></div>
+        <h2>Hambúrguer</h2><p>Lanches</p>
+      </article>
+      <article class="hologram-card">
+        <div class="hologram-scene" aria-hidden="true"><div class="hologram-orbit"></div><svg class="hologram-image" viewBox="0 0 40 40"><use href="#icone-batatas"/></svg><div class="hologram-platform"></div></div>
+        <h2>Batata frita</h2><p>Acompanhamentos</p>
+      </article>
+      <article class="hologram-card">
+        <div class="hologram-scene" aria-hidden="true"><div class="hologram-orbit"></div><svg class="hologram-image" viewBox="0 0 40 40"><use href="#icone-refrigerante"/></svg><div class="hologram-platform"></div></div>
+        <h2>Refrigerante</h2><p>Bebidas</p>
+      </article>
+    </section>
+    <div class="source"><span class="dot"></span><p id="origem"></p><button id="hamburgueria">Usar base da hamburgueria</button></div>
+    <p id="aviso" class="notice" role="status" aria-live="polite"></p>
+    <section class="panel filters" aria-label="Filtros de vendas">
+      <div><label for="inicio">Data inicial</label><input id="inicio" type="date"></div>
+      <div><label for="fim">Data final</label><input id="fim" type="date"></div>
+      <div><label for="categoria">Categoria</label><select id="categoria"></select></div>
+      <div><label for="regiao" id="rotulo-regiao">Região</label><select id="regiao"></select></div>
+      <button id="limpar">Limpar filtros</button>
+    </section>
+    <div class="section-line"><h2>Visão geral</h2><p id="contagem" aria-live="polite"></p></div>
+    <p id="vazio" class="notice" hidden>Nenhum registro corresponde aos filtros. Ajuste o período, a categoria, a região ou a pesquisa.</p>
+    <section class="metrics" aria-label="Indicadores">
+      <article class="panel metric"><p>Faturamento total</p><strong id="faturamento">—</strong><small>Soma das receitas das linhas</small></article>
+      <article class="panel metric"><p>Quantidade de vendas</p><strong id="vendas">—</strong><small>Identificadores de venda únicos</small></article>
+      <article class="panel metric"><p>Unidades vendidas</p><strong id="unidades">—</strong><small>Quantidade total de produtos</small></article>
+      <article class="panel metric"><p>Ticket médio</p><strong id="ticket">—</strong><small>Faturamento por venda única</small></article>
+    </section>
+    <div class="section-line"><h2>Participação no faturamento</h2><p>Proporções do recorte filtrado · indicadores independentes, não são metas</p></div>
+    <section class="radial-cards" aria-label="Indicadores circulares de participação na receita">
+      <article class="panel radial-card"><h2>Produto líder</h2><div class="progress-ring" id="anel-produto" role="img" aria-label="Participação do produto líder"><svg viewBox="0 0 128 128" aria-hidden="true"><circle class="ring-track" cx="64" cy="64" r="52"/><circle class="ring-progress" cx="64" cy="64" r="52" pathLength="100"/></svg><strong id="percentual-produto">—</strong></div><p class="radial-name" id="lider-produto">—</p><p class="radial-detail" id="detalhe-produto"></p></article>
+      <article class="panel radial-card"><h2>Categoria líder</h2><div class="progress-ring" id="anel-categoria" role="img" aria-label="Participação da categoria líder"><svg viewBox="0 0 128 128" aria-hidden="true"><circle class="ring-track" cx="64" cy="64" r="52"/><circle class="ring-progress" cx="64" cy="64" r="52" pathLength="100"/></svg><strong id="percentual-categoria">—</strong></div><p class="radial-name" id="lider-categoria">—</p><p class="radial-detail" id="detalhe-categoria"></p></article>
+      <article class="panel radial-card"><h2 id="radial-dimensao">Região líder</h2><div class="progress-ring" id="anel-regiao" role="img" aria-label="Participação da região ou canal líder"><svg viewBox="0 0 128 128" aria-hidden="true"><circle class="ring-track" cx="64" cy="64" r="52"/><circle class="ring-progress" cx="64" cy="64" r="52" pathLength="100"/></svg><strong id="percentual-regiao">—</strong></div><p class="radial-name" id="lider-regiao">—</p><p class="radial-detail" id="detalhe-regiao"></p></article>
+      <article class="panel radial-card"><h2>Turno líder</h2><div class="progress-ring" id="anel-periodo" role="img" aria-label="Participação do turno líder"><svg viewBox="0 0 128 128" aria-hidden="true"><circle class="ring-track" cx="64" cy="64" r="52"/><circle class="ring-progress" cx="64" cy="64" r="52" pathLength="100"/></svg><strong id="percentual-periodo">—</strong></div><p class="radial-name" id="lider-periodo">—</p><p class="radial-detail" id="detalhe-periodo"></p></article>
+    </section>
+    <section class="charts" aria-label="Gráficos de faturamento">
+      <article class="panel chart wide"><h2>Evolução do faturamento</h2><p>Receita mensal · R$</p><div class="canvas-box"><canvas id="mensal" aria-label="Faturamento por mês" role="img"></canvas></div></article>
+      <article class="panel chart chart-composition"><h2>Receita por categoria</h2><p>Participação no faturamento · valores em R$</p><div class="canvas-box"><canvas id="categorias" aria-label="Faturamento por categoria" role="img"></canvas></div></article>
+      <article class="panel chart"><h2 id="titulo-regiao">Receita por região</h2><p>Comparação dos resultados · R$</p><div class="canvas-box"><canvas id="regioes" aria-label="Faturamento por região ou canal" role="img"></canvas></div></article>
+    </section>
+    <div class="section-line"><h2>Produtos e ritmo de vendas</h2><p>Os mesmos filtros são aplicados a todos os gráficos</p></div>
+    <section class="charts" aria-label="Gráficos de produtos e operação">
+      <article class="panel chart wide"><h2>Faturamento diário</h2><p>Receita por data registrada · R$</p><div class="canvas-box"><canvas id="diario" role="img" aria-label="Evolução diária do faturamento"></canvas></div><p class="chart-note" id="diario-nota"></p></article>
+      <article class="panel chart chart-ranking"><h2>Produtos com maior receita</h2><p>Até 10 produtos · R$</p><div class="canvas-box"><canvas id="produtos" role="img" aria-label="Receita por produto"></canvas></div><p class="chart-note" id="produtos-nota"></p></article>
+      <article class="panel chart chart-volume"><h2>Unidades por produto</h2><p>Até 10 produtos · unidades vendidas</p><div class="canvas-box"><canvas id="unidades-produto" role="img" aria-label="Quantidade de unidades por produto"></canvas></div><p class="chart-note" id="unidades-produto-nota"></p></article>
+      <article class="panel chart chart-week"><h2>Receita média por dia da semana</h2><p>Média por dia com registro no recorte · R$</p><div class="canvas-box"><canvas id="semana" role="img" aria-label="Receita média por dia da semana"></canvas></div><p class="chart-note" id="semana-nota"></p></article>
+      <article class="panel chart chart-shift"><h2>Receita por turno</h2><p>Comparação de períodos do dia · R$</p><div class="canvas-box"><canvas id="turnos" role="img" aria-label="Faturamento por turno"></canvas></div><p class="chart-note" id="turnos-nota"></p></article>
+      <article class="panel chart chart-compact"><h2>Receita por forma de pagamento</h2><p>Receita registrada, antes de taxas · R$</p><div class="canvas-box"><canvas id="pagamentos" role="img" aria-label="Faturamento por forma de pagamento"></canvas></div><p class="chart-note" id="pagamentos-nota"></p></article>
+      <article class="panel chart chart-compact"><h2>Espera média por canal</h2><p>Média dos registros com tempo válido · minutos</p><div class="canvas-box"><canvas id="espera" role="img" aria-label="Tempo médio de espera por canal"></canvas></div><p class="chart-note" id="espera-nota"></p></article>
+      <article class="panel chart chart-compact"><h2>Avaliação média por canal</h2><p>Média das respostas válidas · escala de 1 a 5</p><div class="canvas-box"><canvas id="avaliacoes" role="img" aria-label="Avaliação média por canal"></canvas></div><p class="chart-note" id="avaliacoes-nota"></p></article>
+    </section>
+    <section class="panel table-panel">
+      <div class="table-heading"><div><h2>Detalhamento das vendas</h2><p>Pesquisa aplicada também aos indicadores, gráficos e exportação.</p></div><button id="exportar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v13m-5-5 5 5 5-5M4 15v5h16v-5"/></svg>Exportar CSV</button></div>
+      <div class="product-legend" aria-label="Legenda dos ícones de produto"><span><svg class="food-icon" aria-hidden="true"><use href="#icone-hamburguer"/></svg>Lanches</span><span><svg class="food-icon" aria-hidden="true"><use href="#icone-batatas"/></svg>Acompanhamentos</span><span><svg class="food-icon" aria-hidden="true"><use href="#icone-refrigerante"/></svg>Bebidas</span></div>
+      <div class="table-controls"><div><label for="pesquisa">Pesquisar em todos os campos</label><input id="pesquisa" type="search" placeholder="Produto, categoria, região, ID…"></div><div><label for="ordem">Ordenar por</label><select id="ordem"><option value="data-desc">Data: mais recente</option><option value="data-asc">Data: mais antiga</option><option value="faturamento-desc">Faturamento: maior primeiro</option><option value="faturamento-asc">Faturamento: menor primeiro</option><option value="produto-asc">Produto: A → Z</option><option value="id_venda-asc">ID da venda: crescente</option></select></div></div>
+      <div class="table-scroll" tabindex="0" aria-label="Tabela de vendas, role para ver todas as colunas"><table><caption class="sr-only">Vendas filtradas. Receita calculada por quantidade vezes preço unitário.</caption><thead><tr><th>ID da venda</th><th>Data</th><th>Produto</th><th>Categoria</th><th id="coluna-regiao">Região</th><th class="number">Unidades</th><th class="number">Preço unitário</th><th class="number">Faturamento</th></tr></thead><tbody id="linhas"></tbody></table></div>
+      <div class="pagination"><span id="pagina-info"></span><div><button id="anterior">Anterior</button><button id="proxima">Próxima</button></div></div>
+    </section>
+    <footer>
+      <section class="developer-credit" aria-labelledby="titulo-creditos">
+        <div><p class="credit-label" id="titulo-creditos">Créditos do Desenvolvedor</p><p class="credit-name">Yasmin | Análise de Dados</p></div>
+        <a class="github-link" href="https://github.com/pontelyasmin-crypto" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Yasmin: github.com/pontelyasmin-crypto (abre em nova aba)">
+          <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.63 0c2.15-1.46 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.21.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg>
+          <span>github.com/pontelyasmin-crypto</span><span class="external-link-mark" aria-hidden="true">↗</span>
+        </a>
+      </section>
+      <p class="footer-note">Atividade de análise exploratória · Os resultados descrevem a base selecionada e não demonstram relações de causa e efeito.</p>
+    </footer>
+  </main>
+</body>
+</html>

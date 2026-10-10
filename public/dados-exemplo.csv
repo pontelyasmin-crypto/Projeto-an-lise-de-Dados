@@ -1,0 +1,201 @@
+id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+DEMO-001,2025-01-01,X-Burger,Lanches,Norte,1,22.9
+DEMO-002,2025-02-12,Brownie,Sobremesas,Sudeste,3,12.5
+DEMO-003,2025-03-23,Milkshake,Sobremesas,Nordeste,5,16.9
+DEMO-004,2025-04-06,Onion rings,Acompanhamentos,Sul,2,17.9
+DEMO-005,2025-05-17,Batata frita,Acompanhamentos,Centro-Oeste,4,14.9
+DEMO-006,2025-06-28,Suco natural,Bebidas,Norte,1,9.5
+DEMO-007,2025-07-11,Refrigerante,Bebidas,Sudeste,3,6.9
+DEMO-008,2025-08-22,X-Bacon,Lanches,Nordeste,5,29.9
+DEMO-009,2025-09-05,X-Burger,Lanches,Sul,2,22.9
+DEMO-010,2025-10-16,Brownie,Sobremesas,Centro-Oeste,4,12.5
+DEMO-011,2025-11-27,Milkshake,Sobremesas,Norte,1,16.9
+DEMO-012,2025-12-10,Onion rings,Acompanhamentos,Sudeste,3,17.9
+DEMO-013,2025-01-21,Onion rings,Acompanhamentos,Centro-Oeste,5,17.9
+DEMO-014,2025-02-04,Batata frita,Acompanhamentos,Norte,2,14.9
+DEMO-015,2025-03-15,Suco natural,Bebidas,Sudeste,4,9.5
+DEMO-016,2025-04-26,Refrigerante,Bebidas,Nordeste,1,6.9
+DEMO-017,2025-05-09,X-Bacon,Lanches,Sul,3,29.9
+DEMO-018,2025-06-20,X-Burger,Lanches,Centro-Oeste,5,22.9
+DEMO-019,2025-07-03,Brownie,Sobremesas,Norte,2,12.5
+DEMO-020,2025-08-14,Milkshake,Sobremesas,Sudeste,4,16.9
+DEMO-021,2025-09-25,Onion rings,Acompanhamentos,Nordeste,2,17.9
+DEMO-022,2025-10-08,Batata frita,Acompanhamentos,Sul,4,14.9
+DEMO-023,2025-11-19,Suco natural,Bebidas,Centro-Oeste,1,9.5
+DEMO-024,2025-12-02,Refrigerante,Bebidas,Norte,3,6.9
+DEMO-025,2025-01-13,Refrigerante,Bebidas,Sul,5,6.9
+DEMO-026,2025-02-24,X-Bacon,Lanches,Centro-Oeste,2,29.9
+DEMO-027,2025-03-07,X-Burger,Lanches,Norte,4,22.9
+DEMO-028,2025-04-18,Brownie,Sobremesas,Sudeste,1,12.5
+DEMO-029,2025-05-01,Milkshake,Sobremesas,Nordeste,3,16.9
+DEMO-030,2025-06-12,Onion rings,Acompanhamentos,Sul,5,17.9
+DEMO-031,2025-07-23,Batata frita,Acompanhamentos,Centro-Oeste,2,14.9
+DEMO-032,2025-08-06,Suco natural,Bebidas,Norte,4,9.5
+DEMO-033,2025-09-17,Refrigerante,Bebidas,Sudeste,1,6.9
+DEMO-034,2025-10-28,X-Bacon,Lanches,Nordeste,3,29.9
+DEMO-035,2025-11-11,X-Burger,Lanches,Sul,5,22.9
+DEMO-036,2025-12-22,Brownie,Sobremesas,Centro-Oeste,2,12.5
+DEMO-037,2025-01-05,Brownie,Sobremesas,Nordeste,4,12.5
+DEMO-038,2025-02-16,Milkshake,Sobremesas,Sul,1,16.9
+DEMO-039,2025-03-27,Onion rings,Acompanhamentos,Centro-Oeste,3,17.9
+DEMO-040,2025-04-10,Batata frita,Acompanhamentos,Norte,5,14.9
+DEMO-041,2025-05-21,Suco natural,Bebidas,Sudeste,3,9.5
+DEMO-042,2025-06-04,Refrigerante,Bebidas,Nordeste,5,6.9
+DEMO-043,2025-07-15,X-Bacon,Lanches,Sul,2,29.9
+DEMO-044,2025-08-26,X-Burger,Lanches,Centro-Oeste,4,22.9
+DEMO-045,2025-09-09,Brownie,Sobremesas,Norte,1,12.5
+DEMO-046,2025-10-20,Milkshake,Sobremesas,Sudeste,3,16.9
+DEMO-047,2025-11-03,Onion rings,Acompanhamentos,Nordeste,5,17.9
+DEMO-048,2025-12-14,Batata frita,Acompanhamentos,Sul,2,14.9
+DEMO-049,2025-01-25,Batata frita,Acompanhamentos,Sudeste,4,14.9
+DEMO-050,2025-02-08,Suco natural,Bebidas,Nordeste,1,9.5
+DEMO-051,2025-03-19,Refrigerante,Bebidas,Sul,3,6.9
+DEMO-052,2025-04-02,X-Bacon,Lanches,Centro-Oeste,5,29.9
+DEMO-053,2025-05-13,X-Burger,Lanches,Norte,2,22.9
+DEMO-054,2025-06-24,Brownie,Sobremesas,Sudeste,4,12.5
+DEMO-055,2025-07-07,Milkshake,Sobremesas,Nordeste,1,16.9
+DEMO-056,2025-08-18,Onion rings,Acompanhamentos,Sul,3,17.9
+DEMO-057,2025-09-01,Batata frita,Acompanhamentos,Centro-Oeste,5,14.9
+DEMO-058,2025-10-12,Suco natural,Bebidas,Norte,2,9.5
+DEMO-059,2025-11-23,Refrigerante,Bebidas,Sudeste,4,6.9
+DEMO-060,2025-12-06,X-Bacon,Lanches,Nordeste,1,29.9
+DEMO-061,2025-01-17,X-Bacon,Lanches,Norte,4,29.9
+DEMO-062,2025-02-28,X-Burger,Lanches,Sudeste,1,22.9
+DEMO-063,2025-03-11,Brownie,Sobremesas,Nordeste,3,12.5
+DEMO-064,2025-04-22,Milkshake,Sobremesas,Sul,5,16.9
+DEMO-065,2025-05-05,Onion rings,Acompanhamentos,Centro-Oeste,2,17.9
+DEMO-066,2025-06-16,Batata frita,Acompanhamentos,Norte,4,14.9
+DEMO-067,2025-07-27,Suco natural,Bebidas,Sudeste,1,9.5
+DEMO-068,2025-08-10,Refrigerante,Bebidas,Nordeste,3,6.9
+DEMO-069,2025-09-21,X-Bacon,Lanches,Sul,5,29.9
+DEMO-070,2025-10-04,X-Burger,Lanches,Centro-Oeste,2,22.9
+DEMO-071,2025-11-15,Brownie,Sobremesas,Norte,4,12.5
+DEMO-072,2025-12-26,Milkshake,Sobremesas,Sudeste,1,16.9
+DEMO-073,2025-01-09,Milkshake,Sobremesas,Centro-Oeste,3,16.9
+DEMO-074,2025-02-20,Onion rings,Acompanhamentos,Norte,5,17.9
+DEMO-075,2025-03-03,Batata frita,Acompanhamentos,Sudeste,2,14.9
+DEMO-076,2025-04-14,Suco natural,Bebidas,Nordeste,4,9.5
+DEMO-077,2025-05-25,Refrigerante,Bebidas,Sul,1,6.9
+DEMO-078,2025-06-08,X-Bacon,Lanches,Centro-Oeste,3,29.9
+DEMO-079,2025-07-19,X-Burger,Lanches,Norte,5,22.9
+DEMO-080,2025-08-02,Brownie,Sobremesas,Sudeste,2,12.5
+DEMO-081,2025-09-13,Milkshake,Sobremesas,Nordeste,5,16.9
+DEMO-082,2025-10-24,Onion rings,Acompanhamentos,Sul,2,17.9
+DEMO-083,2025-11-07,Batata frita,Acompanhamentos,Centro-Oeste,4,14.9
+DEMO-084,2025-12-18,Suco natural,Bebidas,Norte,1,9.5
+DEMO-085,2025-01-01,Suco natural,Bebidas,Sul,3,9.5
+DEMO-086,2025-02-12,Refrigerante,Bebidas,Centro-Oeste,5,6.9
+DEMO-087,2025-03-23,X-Bacon,Lanches,Norte,2,29.9
+DEMO-088,2025-04-06,X-Burger,Lanches,Sudeste,4,22.9
+DEMO-089,2025-05-17,Brownie,Sobremesas,Nordeste,1,12.5
+DEMO-090,2025-06-28,Milkshake,Sobremesas,Sul,3,16.9
+DEMO-091,2025-07-11,Onion rings,Acompanhamentos,Centro-Oeste,5,17.9
+DEMO-092,2025-08-22,Batata frita,Acompanhamentos,Norte,2,14.9
+DEMO-093,2025-09-05,Suco natural,Bebidas,Sudeste,4,9.5
+DEMO-094,2025-10-16,Refrigerante,Bebidas,Nordeste,1,6.9
+DEMO-095,2025-11-27,X-Bacon,Lanches,Sul,3,29.9
+DEMO-096,2025-12-10,X-Burger,Lanches,Centro-Oeste,5,22.9
+DEMO-097,2025-01-21,X-Burger,Lanches,Nordeste,2,22.9
+DEMO-098,2025-02-04,Brownie,Sobremesas,Sul,4,12.5
+DEMO-099,2025-03-15,Milkshake,Sobremesas,Centro-Oeste,1,16.9
+DEMO-100,2025-04-26,Onion rings,Acompanhamentos,Norte,3,17.9
+DEMO-101,2025-05-09,Batata frita,Acompanhamentos,Sudeste,1,14.9
+DEMO-102,2025-06-20,Suco natural,Bebidas,Nordeste,3,9.5
+DEMO-103,2025-07-03,Refrigerante,Bebidas,Sul,5,6.9
+DEMO-104,2025-08-14,X-Bacon,Lanches,Centro-Oeste,2,29.9
+DEMO-105,2025-09-25,X-Burger,Lanches,Norte,4,22.9
+DEMO-106,2025-10-08,Brownie,Sobremesas,Sudeste,1,12.5
+DEMO-107,2025-11-19,Milkshake,Sobremesas,Nordeste,3,16.9
+DEMO-108,2025-12-02,Onion rings,Acompanhamentos,Sul,5,17.9
+DEMO-109,2025-01-13,Onion rings,Acompanhamentos,Sudeste,2,17.9
+DEMO-110,2025-02-24,Batata frita,Acompanhamentos,Nordeste,4,14.9
+DEMO-111,2025-03-07,Suco natural,Bebidas,Sul,1,9.5
+DEMO-112,2025-04-18,Refrigerante,Bebidas,Centro-Oeste,3,6.9
+DEMO-113,2025-05-01,X-Bacon,Lanches,Norte,5,29.9
+DEMO-114,2025-06-12,X-Burger,Lanches,Sudeste,2,22.9
+DEMO-115,2025-07-23,Brownie,Sobremesas,Nordeste,4,12.5
+DEMO-116,2025-08-06,Milkshake,Sobremesas,Sul,1,16.9
+DEMO-117,2025-09-17,Onion rings,Acompanhamentos,Centro-Oeste,3,17.9
+DEMO-118,2025-10-28,Batata frita,Acompanhamentos,Norte,5,14.9
+DEMO-119,2025-11-11,Suco natural,Bebidas,Sudeste,2,9.5
+DEMO-120,2025-12-22,Refrigerante,Bebidas,Nordeste,4,6.9
+DEMO-121,2025-01-05,Refrigerante,Bebidas,Norte,2,6.9
+DEMO-122,2025-02-16,X-Bacon,Lanches,Sudeste,4,29.9
+DEMO-123,2025-03-27,X-Burger,Lanches,Nordeste,1,22.9
+DEMO-124,2025-04-10,Brownie,Sobremesas,Sul,3,12.5
+DEMO-125,2025-05-21,Milkshake,Sobremesas,Centro-Oeste,5,16.9
+DEMO-126,2025-06-04,Onion rings,Acompanhamentos,Norte,2,17.9
+DEMO-127,2025-07-15,Batata frita,Acompanhamentos,Sudeste,4,14.9
+DEMO-128,2025-08-26,Suco natural,Bebidas,Nordeste,1,9.5
+DEMO-129,2025-09-09,Refrigerante,Bebidas,Sul,3,6.9
+DEMO-130,2025-10-20,X-Bacon,Lanches,Centro-Oeste,5,29.9
+DEMO-131,2025-11-03,X-Burger,Lanches,Norte,2,22.9
+DEMO-132,2025-12-14,Brownie,Sobremesas,Sudeste,4,12.5
+DEMO-133,2025-01-25,Brownie,Sobremesas,Centro-Oeste,1,12.5
+DEMO-134,2025-02-08,Milkshake,Sobremesas,Norte,3,16.9
+DEMO-135,2025-03-19,Onion rings,Acompanhamentos,Sudeste,5,17.9
+DEMO-136,2025-04-02,Batata frita,Acompanhamentos,Nordeste,2,14.9
+DEMO-137,2025-05-13,Suco natural,Bebidas,Sul,4,9.5
+DEMO-138,2025-06-24,Refrigerante,Bebidas,Centro-Oeste,1,6.9
+DEMO-139,2025-07-07,X-Bacon,Lanches,Norte,3,29.9
+DEMO-140,2025-08-18,X-Burger,Lanches,Sudeste,5,22.9
+DEMO-141,2025-09-01,Brownie,Sobremesas,Nordeste,3,12.5
+DEMO-142,2025-10-12,Milkshake,Sobremesas,Sul,5,16.9
+DEMO-143,2025-11-23,Onion rings,Acompanhamentos,Centro-Oeste,2,17.9
+DEMO-144,2025-12-06,Batata frita,Acompanhamentos,Norte,4,14.9
+DEMO-145,2025-01-17,Batata frita,Acompanhamentos,Sul,1,14.9
+DEMO-146,2025-02-28,Suco natural,Bebidas,Centro-Oeste,3,9.5
+DEMO-147,2025-03-11,Refrigerante,Bebidas,Norte,5,6.9
+DEMO-148,2025-04-22,X-Bacon,Lanches,Sudeste,2,29.9
+DEMO-149,2025-05-05,X-Burger,Lanches,Nordeste,4,22.9
+DEMO-150,2025-06-16,Brownie,Sobremesas,Sul,1,12.5
+DEMO-151,2025-07-27,Milkshake,Sobremesas,Centro-Oeste,3,16.9
+DEMO-152,2025-08-10,Onion rings,Acompanhamentos,Norte,5,17.9
+DEMO-153,2025-09-21,Batata frita,Acompanhamentos,Sudeste,2,14.9
+DEMO-154,2025-10-04,Suco natural,Bebidas,Nordeste,4,9.5
+DEMO-155,2025-11-15,Refrigerante,Bebidas,Sul,1,6.9
+DEMO-156,2025-12-26,X-Bacon,Lanches,Centro-Oeste,3,29.9
+DEMO-157,2025-01-09,X-Bacon,Lanches,Nordeste,5,29.9
+DEMO-158,2025-02-20,X-Burger,Lanches,Sul,2,22.9
+DEMO-159,2025-03-03,Brownie,Sobremesas,Centro-Oeste,4,12.5
+DEMO-160,2025-04-14,Milkshake,Sobremesas,Norte,1,16.9
+DEMO-161,2025-05-25,Onion rings,Acompanhamentos,Sudeste,4,17.9
+DEMO-162,2025-06-08,Batata frita,Acompanhamentos,Nordeste,1,14.9
+DEMO-163,2025-07-19,Suco natural,Bebidas,Sul,3,9.5
+DEMO-164,2025-08-02,Refrigerante,Bebidas,Centro-Oeste,5,6.9
+DEMO-165,2025-09-13,X-Bacon,Lanches,Norte,2,29.9
+DEMO-166,2025-10-24,X-Burger,Lanches,Sudeste,4,22.9
+DEMO-167,2025-11-07,Brownie,Sobremesas,Nordeste,1,12.5
+DEMO-168,2025-12-18,Milkshake,Sobremesas,Sul,3,16.9
+DEMO-169,2025-01-01,Milkshake,Sobremesas,Sudeste,5,16.9
+DEMO-170,2025-02-12,Onion rings,Acompanhamentos,Nordeste,2,17.9
+DEMO-171,2025-03-23,Batata frita,Acompanhamentos,Sul,4,14.9
+DEMO-172,2025-04-06,Suco natural,Bebidas,Centro-Oeste,1,9.5
+DEMO-173,2025-05-17,Refrigerante,Bebidas,Norte,3,6.9
+DEMO-174,2025-06-28,X-Bacon,Lanches,Sudeste,5,29.9
+DEMO-175,2025-07-11,X-Burger,Lanches,Nordeste,2,22.9
+DEMO-176,2025-08-22,Brownie,Sobremesas,Sul,4,12.5
+DEMO-177,2025-09-05,Milkshake,Sobremesas,Centro-Oeste,1,16.9
+DEMO-178,2025-10-16,Onion rings,Acompanhamentos,Norte,3,17.9
+DEMO-179,2025-11-27,Batata frita,Acompanhamentos,Sudeste,5,14.9
+DEMO-180,2025-12-10,Suco natural,Bebidas,Nordeste,2,9.5
+DEMO-181,2025-01-21,Suco natural,Bebidas,Norte,5,9.5
+DEMO-182,2025-02-04,Refrigerante,Bebidas,Sudeste,2,6.9
+DEMO-183,2025-03-15,X-Bacon,Lanches,Nordeste,4,29.9
+DEMO-184,2025-04-26,X-Burger,Lanches,Sul,1,22.9
+DEMO-185,2025-05-09,Brownie,Sobremesas,Centro-Oeste,3,12.5
+DEMO-186,2025-06-20,Milkshake,Sobremesas,Norte,5,16.9
+DEMO-187,2025-07-03,Onion rings,Acompanhamentos,Sudeste,2,17.9
+DEMO-188,2025-08-14,Batata frita,Acompanhamentos,Nordeste,4,14.9
+DEMO-189,2025-09-25,Suco natural,Bebidas,Sul,1,9.5
+DEMO-190,2025-10-08,Refrigerante,Bebidas,Centro-Oeste,3,6.9
+DEMO-191,2025-11-19,X-Bacon,Lanches,Norte,5,29.9
+DEMO-192,2025-12-02,X-Burger,Lanches,Sudeste,2,22.9
+DEMO-193,2025-01-13,X-Burger,Lanches,Centro-Oeste,4,22.9
+DEMO-194,2025-02-24,Brownie,Sobremesas,Norte,1,12.5
+DEMO-195,2025-03-07,Milkshake,Sobremesas,Sudeste,3,16.9
+DEMO-196,2025-04-18,Onion rings,Acompanhamentos,Nordeste,5,17.9
+DEMO-197,2025-05-01,Batata frita,Acompanhamentos,Sul,2,14.9
+DEMO-198,2025-06-12,Suco natural,Bebidas,Centro-Oeste,4,9.5
+DEMO-199,2025-07-23,Refrigerante,Bebidas,Norte,1,6.9
+DEMO-200,2025-08-06,X-Bacon,Lanches,Sudeste,3,29.9
